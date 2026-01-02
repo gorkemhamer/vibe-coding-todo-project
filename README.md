@@ -23,5 +23,12 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+## Dockerization
 
+### Build the image
+```bash
+docker build -t smart-task-manager .
 
+### Run the container
+```bash
+docker run -it --rm -e DISPLAY=$DISPLAY smart-task-manager
